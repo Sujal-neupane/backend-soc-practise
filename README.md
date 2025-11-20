@@ -58,37 +58,6 @@ npm install
 npm run dev
 ```
 
-### Test the endpoints:
-
-**Get all users:**
-```bash
-curl http://localhost:3000/api/users
-```
-
-**Get single user:**
-```bash
-curl http://localhost:3000/api/users/1
-```
-
-**Create user:**
-```bash
-curl -X POST http://localhost:3000/api/users \
-  -H "Content-Type: application/json" \
-  -d '{"username":"bob","email":"bob@example.com","name":"Bob Johnson","age":28}'
-```
-
-**Update user:**
-```bash
-curl -X PUT http://localhost:3000/api/users/1 \
-  -H "Content-Type: application/json" \
-  -d '{"username":"john_doe","email":"john@example.com","name":"John Updated","age":31}'
-```
-
-**Delete user:**
-```bash
-curl -X DELETE http://localhost:3000/api/users/1
-```
-
 ## 📚 Recommended Architecture
 
 ```
@@ -173,3 +142,4 @@ HTTP Request
 - Business logic should be framework-agnostic
 
 Good luck refactoring!
+
